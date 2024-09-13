@@ -23,10 +23,15 @@ class Computer:
 
     # What methods will you need?
 
-    # Allows other files to access the operating system
+     # Allows other files to access the computer object
     def getComputer(self):
          return self
+
+    # Allows other files to access the description
+    def getDescription(self):
+         return self.description
     
+    # Allows other files to access the operating system
     def getOperating_System(self):
          return self.operating_system
     
@@ -38,6 +43,11 @@ class Computer:
     def getPrice(self):
          return self.price
     
+    def changePrice(self, new_price):
+         self.price = new_price
+    
+    def changeOS(self, new_os):
+         self.operating_system = new_os
 
   
          
@@ -51,6 +61,8 @@ def main():
     "macOS Big Sur", 2013, 1500)
         print(my_computer.getOperating_System())
         print(my_computer.getYear())
+        print(my_computer.getPrice())
+        my_computer.changePrice(30)
         print(my_computer.getPrice())
 
 
