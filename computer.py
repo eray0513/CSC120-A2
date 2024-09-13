@@ -24,6 +24,9 @@ class Computer:
     # What methods will you need?
 
     # Allows other files to access the operating system
+    def getComputer(self):
+         return self
+    
     def getOperating_System(self):
          return self.operating_system
     
@@ -42,8 +45,10 @@ class Computer:
          
 
 def main():
-        my_computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
-        print(my_computer.description)
+        my_computer = Computer("Mac Pro (Late 2013)",
+    "3.5 GHc 6-Core Intel Xeon E5",
+    1024, 64,
+    "macOS Big Sur", 2013, 1500)
         print(my_computer.getOperating_System())
         print(my_computer.getYear())
         print(my_computer.getPrice())
