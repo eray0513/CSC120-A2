@@ -35,17 +35,19 @@ class Computer:
     def getOperating_System(self):
          return self.operating_system
     
-    #Allows other files to access the year made
+    # Allows other files to access the year made
     def getYear(self):
          return self.year_made
     
-    #Allows other files to access the price
+    # Allows other files to access the price
     def getPrice(self):
          return self.price
     
+    # Allows the computer object to change its own price
     def changePrice(self, new_price):
          self.price = new_price
     
+    # Allows the computer object to change its own operating system
     def changeOS(self, new_os):
          self.operating_system = new_os
 
