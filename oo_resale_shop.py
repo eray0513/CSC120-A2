@@ -51,6 +51,7 @@ class ResaleShop:
     def printInventory(self): 
         if self.inventory: # Checks if their is anything in the inventory
             for i in self.inventory:
+                print()
                 print("Inventory:")
                 print(i.getDescription()) # Call to method in computer class
                 print()
