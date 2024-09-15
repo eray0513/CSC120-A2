@@ -4,6 +4,7 @@ from computer import *
 # Import optional from typing
 from typing import Optional
 
+# Creates a Resale Shop object which has an inventory and can buy, sell, refurbish, check inventory, and change prices of computer objects
 class ResaleShop:
 
 

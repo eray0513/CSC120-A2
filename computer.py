@@ -1,16 +1,16 @@
+# Creates computer objects that store information on themselves and can retrieve and manipulate necessary information for the resale shop
 class Computer:
 
-    # What attributes will it need?
-    description: str
-    processor_type: str
-    hard_drive_capacity: int
-    memory: int
-    operating_system: str
-    year_made: int
-    price: int
+    
+    description: str # Describes computer
+    processor_type: str # What processor the computer has
+    hard_drive_capacity: int # The capacity of the hard drive
+    memory: int # The memory capacity
+    operating_system: str # The operating system currently
+    year_made: int # The year it was made
+    price: int # The price it is being reselled for
 
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
+     # Constructs a computer object and initializes its attributes
     def __init__ (self, description: str, processor_type: str, hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: int):
         self.description = description
         self.processor_type = processor_type
@@ -20,8 +20,6 @@ class Computer:
         self.year_made = year_made
         self.price = price
 
-
-    # What methods will you need?
 
      # Allows other files to access the computer object
     def getComputer(self):
