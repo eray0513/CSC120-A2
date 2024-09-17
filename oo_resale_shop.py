@@ -99,20 +99,36 @@ def main():
     my_ResaleShop.buy(my_computer)
     my_ResaleShop.printInventory()
     my_ResaleShop.buy(my_computer)
+    my_ResaleShop.refurbish(my_computer)
     my_ResaleShop.sell(my_computer)
     my_ResaleShop.sell(my_computer)
     
     my_computer2 = Computer(
-    "Mac Pro (Late 2013)",
+    "Mac Pro",
     "3.5 GHc 6-Core Intel Xeon E5",
     1024, 64,
-    "macOS Big Sur", 2013, 1500
+    "macOS Big Sur", 1999, 1500
     )
 
+    my_computer3 = Computer(    "Mac",
+    "3.5 GHc 6-Core Intel Xeon E5",
+    1024, 64,
+    "macOS Big Sur", 2024, 1500
+    )
+
+    my_computer4 = Computer(    "Mac Pro",
+    "3.5 GHc 6-Core Intel Xeon E5",
+    1024, 64,
+    "macOS Big Sur", 2017, 1500
+    )
+
+    my_ResaleShop.buy(my_computer3)
+    my_ResaleShop.buy(my_computer4)
     my_ResaleShop.buy(my_computer2)
     new_OS : str = "MACOS 3000"
     my_ResaleShop.refurbish(my_computer2, new_OS)
-    my_ResaleShop.refurbish(my_computer2)
+    my_ResaleShop.refurbish(my_computer3)
+    my_ResaleShop.refurbish(my_computer4, new_OS)
     my_ResaleShop.updatePrice(my_computer2, 3700)
     print(my_computer2.getPrice())
     print(my_computer2.getOperating_System())
