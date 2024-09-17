@@ -86,6 +86,8 @@ class ResaleShop:
         
         
 def main():
+    
+    # Create a Resale shop and a computer
     my_ResaleShop: ResaleShop = ResaleShop()
     my_computer = Computer(
     "Mac Pro (Late 2013)",
@@ -94,6 +96,7 @@ def main():
     "macOS Big Sur", 2013, 1500
     )
 
+    # Test methods with different expected results with computer 1
     my_ResaleShop.open()
     my_ResaleShop.printInventory()
     my_ResaleShop.buy(my_computer)
@@ -103,6 +106,7 @@ def main():
     my_ResaleShop.sell(my_computer)
     my_ResaleShop.sell(my_computer)
     
+    # Create 3 more computers
     my_computer2 = Computer(
     "Mac Pro",
     "3.5 GHc 6-Core Intel Xeon E5",
@@ -122,6 +126,7 @@ def main():
     "macOS Big Sur", 2017, 1500
     )
 
+    # Test methods with 3 more computers (especially refurbish method)
     my_ResaleShop.buy(my_computer3)
     my_ResaleShop.buy(my_computer4)
     my_ResaleShop.buy(my_computer2)

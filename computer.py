@@ -49,21 +49,28 @@ class Computer:
     def changeOS(self, new_os):
          self.operating_system = new_os
 
-  
-         
-         
-         
+     # Allows the computer object to be tested
+    def __str__(self) -> str:
+         return "Desc: " + self.description + "\n" + "Processor: " + self.processor_type + "\n" "HD: " + str(self.hard_drive_capacity) + "\n" + "Memory: " + str(self.memory) + "\n" + "OS: " + self.operating_system + "\n" + "Year: " + str(self.year_made) + "\n" + "Price: " + str(self.price)
+
+   
 
 def main():
+     # Create a computer
         my_computer = Computer("Mac Pro (Late 2013)",
     "3.5 GHc 6-Core Intel Xeon E5",
     1024, 64,
     "macOS Big Sur", 2013, 1500)
+     
+     # Test all methods with print statements
         print(my_computer.getOperating_System())
         print(my_computer.getYear())
         print(my_computer.getPrice())
         my_computer.changePrice(30)
         print(my_computer.getPrice())
+        
+        # Test computer object
+        print(my_computer.__str__())
 
 
 main()
